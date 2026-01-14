@@ -18,8 +18,9 @@ body {
 }
 
 header {
-  background-color: var(--primary-color);
-  color: white;
+  background-color: var(--text-light);
+  color: #000;
+  font-weight: 700;
   padding: 1rem;
 }
 
@@ -88,7 +89,12 @@ header {
 .navigation a:hover {
   background-color: #444;
 }
-
+.certificate-section h2{
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  padding: 10px;
+}
 .course-list {
   display: grid;
   grid-template-columns: 1fr;
@@ -119,12 +125,16 @@ header {
   padding: 0.5rem 1rem;
   cursor: pointer;
 }
+.credits-display{
+  text-align: center;
+}
 
 footer {
   background-color: #222;
   color: white;
   text-align: center;
   padding: 2rem;
+  margin-top: 10px;
 }
 
 .social-links img {
