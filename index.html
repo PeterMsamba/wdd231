@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page - Peter Msamba</title>
+  <meta name="description" content="Peter Msamba's Web Development portfolio and course certificate tracker.">
+  <meta name="author" content="Peter Msamba">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-top">
+      <div class="logo-container">
+        <img class="logo-img" src="images/logo.svg" alt="website logo">
+        <span>Peter Msamba</span>
+      </div>
+      <button id="menu" aria-label="Toggle menu"></button>
+    </div>
+    <nav>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="chamber.html">Chamber Project</a></li>
+        <li><a href="final.html">Final Project</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Home</h1>
+    <div class="first-section">
+      <section class="card">
+        <h2>About Me</h2>
+        <p>Hello! I'm Peter Msamba, a passionate web developer based in Malawi. I specialize in creating dynamic and
+          responsive websites. When I'm not coding, I love working on physics projects and listening to music.</p>
+      </section>
+      <section class="card student-card">
+        <h2>Student Photo</h2>
+        <img class="student-img" src="images/student-picture.webp" alt="Peter Msamba student picture" loading="lazy">
+      </section>
+    </div>
+    <section class="certificate-section">
+      <h2>Web Certificate</h2>
+      <div class="filter-buttons">
+        <button id="all">All</button>
+        <button id="cse">CSE</button>
+        <button id="wdd">WDD</button>
+      </div>
+      <ul id="course-container" class="course-list">
+      </ul>
+      <p class="credits-display">Total Credits: <span id="total-credits"></span></p>
+    </section>
+  </main>
+  <footer>
+    <div class="social-links">
+      <a href="https://github.com/yourusername"><img src="images/github.svg" alt="GitHub"></a>
+      <a href="https://linkedin.com/in/yourusername"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+      <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+    </div>
+    <p>&copy; <span id="currentyear"></span> Peter Msamba | Lilongwe, Malawi</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+
+</html>

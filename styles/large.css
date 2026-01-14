@@ -1,0 +1,31 @@
+@media (min-width: 640px) {
+  .header-top {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  #menu {
+    display: none;
+  }
+  
+
+  .navigation {
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+  }
+
+  .first-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 2rem auto;
+  }
+
+  .course-list {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}

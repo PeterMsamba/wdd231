@@ -1,0 +1,134 @@
+:root {
+  --primary-color: #333;
+  --accent-color: #005f73;
+  --completed-bg: #9b2226;
+  --text-light: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Logo Styling */
+.logo-img {
+  width: 50px; /* Small screen size */
+  height: auto;
+  margin-right: 10px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+/* Student Photo Styling */
+.student-img {
+  width: 100%; /* Responsive width */
+  max-width: 300px; /* Prevents oversized image */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Card Styling for Sections */
+.card {
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "❌";
+}
+
+.navigation {
+  display: none;
+  list-style: none;
+  background-color: #000;
+}
+
+.navigation.open {
+  display: block;
+}
+
+.navigation a {
+  display: block;
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navigation a:hover {
+  background-color: #444;
+}
+
+.course-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 1rem;
+  list-style: none;
+}
+
+.course-list li {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.course-list li.completed {
+  background-color: var(--completed-bg);
+}
+
+.filter-buttons {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.filter-buttons button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.social-links img {
+  width: 30px;
+  margin: 0 10px;
+  filter: invert(1);
+}
