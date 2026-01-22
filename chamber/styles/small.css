@@ -1,6 +1,7 @@
 /* Mobile Styles */
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
 }
 
 .logo {
@@ -64,15 +65,25 @@ header {
   background-color: rgb(56, 56, 56);
   padding: 10px;
 }
-#grid, #list{
-  background-color: green;
+
+#grid,
+#list {
+  background-color: rgb(10, 52, 10);
   color: white;
-  font-weight: 700;
   border: none;
   padding: 9px 15px;
   border-radius: 10px;
   margin-left: 15px;
 }
+
+#grid:hover,
+#list:hover {
+  background-color: white;
+  color: rgb(10, 52, 10);
+  border: 1px solid #ccc;
+  font-weight: 700;
+}
+
 #directory-container.grid {
   display: grid;
   grid-template-columns: 1fr;
