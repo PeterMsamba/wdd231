@@ -6,6 +6,8 @@ menuBtn.addEventListener('click', () => {
     menuBtn.classList.toggle('open');
     navigation.classList.toggle('open');
 });
+
+
 const url = "data/members.json";
 const container = document.querySelector('#directory-container');
 const gridBtn = document.querySelector('#grid');

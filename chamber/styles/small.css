@@ -4,19 +4,29 @@ body {
 }
 
 .logo {
-  width: 150px;
+  width: 60px;
   border-radius: 50%;
 }
+
 .logo-container {
   display: flex;
   align-items: center;
 }
+
+.logo-container span {
+  color: white;
+  margin-left: 10px;
+  font-size: 16pxpx;
+  font-weight: 700;
+}
+
 header {
   background-color: var(--text-light);
   color: #000;
   font-weight: 700;
   padding: 1rem;
 }
+
 #menu::before {
   content: "☰";
 }
@@ -46,10 +56,13 @@ header {
 .navigation a:hover {
   background-color: #444;
 }
+
 .header-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: rgb(56, 56, 56);
+  padding: 5px 110px;
 }
 
 #directory-container.grid {
@@ -93,11 +106,13 @@ header {
 #directory-container.list section:nth-child(even) {
   background-color: #eee;
 }
-.social-media{
+
+.social-media {
   width: 40px;
   margin: 10px;
 }
-footer{
+
+footer {
   display: flex;
   flex-direction: column;
   align-items: center;

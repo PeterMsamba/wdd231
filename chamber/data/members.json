@@ -4,7 +4,7 @@
     "address": "Airtel Complex, City Centre, Lilongwe",
     "phone": "+265 1 774 800",
     "website": "https://www.airtel.mw",
-    "image": "images/airtel-malawi.webp",
+    "image": "images/airtel.PNG",
     "membershipLevel": 3,
     "tagline": "Telecommunications"
   },
@@ -13,7 +13,7 @@
     "address": "Off M1 Road, Area 47, Lilongwe",
     "phone": "+265 1 707 222",
     "website": "https://www.luanar.ac.mw",
-    "image": "images/nrc-lilongwe.webp",
+    "image": "images/nrc.jfif",
     "membershipLevel": 2,
     "tagline": "Education & Agriculture"
   },
@@ -22,7 +22,7 @@
     "address": "NBM Towers, City Centre, Lilongwe",
     "phone": "+265 1 771 900",
     "website": "https://www.natbank.co.mw",
-    "image": "images/nbm-lilongwe.webp",
+    "image": "images/national.png",
     "membershipLevel": 3,
     "tagline": "Banking"
   },
@@ -31,7 +31,7 @@
     "address": "Presidential Way, City Centre, Lilongwe",
     "phone": "+265 1 773 388",
     "website": "https://www.sunbirdmalawi.com",
-    "image": "images/sunbird-capital.webp",
+    "image": "images/sch.png",
     "membershipLevel": 2,
     "tagline": "Hospitality"
   },
@@ -40,7 +40,7 @@
     "address": "Kamuzu International Airport, Lilongwe",
     "phone": "+265 996 466 610",
     "website": "https://www.lihaco.net",
-    "image": "images/lihaco-airport.webp",
+    "image": "images/lihaco.jfif",
     "membershipLevel": 2,
     "tagline": "Aviation Services"
   },
@@ -49,7 +49,7 @@
     "address": "City House, City Centre, Lilongwe",
     "phone": "+265 1 772 322",
     "website": "https://www.grantthornton.co.mw",
-    "image": "images/grant-thornton.webp",
+    "image": "images/gtm.jfif",
     "membershipLevel": 2,
     "tagline": "Professional Services"
   },
@@ -58,7 +58,7 @@
     "address": "29/9 Alimaunde Rd, Kanengo, Lilongwe",
     "phone": "+265 1 710 374",
     "website": "https://www.afrox.mw",
-    "image": "images/afrox-malawi.webp",
+    "image": "images/afrox.png",
     "membershipLevel": 1,
     "tagline": "Industrial Gases"
   },
@@ -67,7 +67,7 @@
     "address": "7541 Chilambula Road, Lilongwe",
     "phone": "+265 997 542 677",
     "website": "https://malawiluxury.com",
-    "image": "images/malawi-luxury.webp",
+    "image": "images/ml.jfif",
     "membershipLevel": 1,
     "tagline": "Lifestyle & Retail"
   }

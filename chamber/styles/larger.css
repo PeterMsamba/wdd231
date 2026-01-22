@@ -1,13 +1,25 @@
 @media (min-width: 600px) {
-   .header-top {
+  .header-top {
     max-width: 1000px;
     margin: 0 auto;
+  }
+
+  .logo {
+    width: 150px;
+    border-radius: 50%;
+  }
+
+  .logo-container span {
+    color: white;
+    margin-left: 10px;
+    font-size: 35px;
+    font-weight: 700;
   }
 
   #menu {
     display: none;
   }
-  
+
 
   .navigation {
     display: flex;
@@ -18,7 +30,8 @@
   #directory-container.grid {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
-  footer{
+
+  footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
