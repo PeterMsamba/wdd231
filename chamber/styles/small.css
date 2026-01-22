@@ -23,7 +23,6 @@ body {
 
 header {
   background-color: var(--text-light);
-  color: #000;
   font-weight: 700;
   padding: 1rem;
 }
@@ -64,6 +63,7 @@ header {
   align-items: center;
   background-color: rgb(56, 56, 56);
   padding: 10px;
+  color: white;
 }
 
 #grid,
