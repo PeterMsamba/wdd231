@@ -16,7 +16,7 @@ body {
 .logo-container span {
   color: white;
   margin-left: 10px;
-  font-size: 16pxpx;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -62,9 +62,17 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: rgb(56, 56, 56);
-  padding: 5px 110px;
+  padding: 10px;
 }
-
+#grid, #list{
+  background-color: green;
+  color: white;
+  font-weight: 700;
+  border: none;
+  padding: 9px 15px;
+  border-radius: 10px;
+  margin-left: 15px;
+}
 #directory-container.grid {
   display: grid;
   grid-template-columns: 1fr;
