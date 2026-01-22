@@ -1,0 +1,26 @@
+@media (min-width: 600px) {
+   .header-top {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  #menu {
+    display: none;
+  }
+  
+
+  .navigation {
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+  }
+
+  #directory-container.grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+  }
+}

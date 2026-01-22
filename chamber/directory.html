@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chamber of Commerce - Business Directory</title>
+  <meta name="description"
+    content="Official Business Directory for the Chamber of Commerce. Explore local businesses and services.">
+  <meta name="author" content="Peter Msamba">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <meta property="og:title" content="City Chamber Business Directory">
+  <meta property="og:description" content="Connect with the best local businesses in our community.">
+  <meta property="og:image" content="https://yourgithubusername.github.io/wdd231/chamber/images/og-image.jpg">
+  <meta property="og:url" content="https://yourgithubusername.github.io/wdd231/chamber/directory.html">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div  class="header-top">
+      <div class="logo-container">
+        <img class="logo" src="images/logo.svg" alt="Chamber Logo">
+        <span>Lilongwe Chamber of Commerce</span>
+      </div>
+      <button id="menu"></button>
+    </div>
+    
+    <nav>
+      <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="directory.html" class="active">Directory</a></li>
+        <li><a href="#">Join</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="directory-controls">
+      <button id="grid">Grid View</button>
+      <button id="list">List View</button>
+    </div>
+    <article id="directory-container" class="grid">
+    </article>
+  </main>
+
+  <footer>
+    <div class="footer-info">
+      <h3>Lilongwe Chamber of Commerce</h3>
+      <p>Likuni-NRC Road</p>
+      <p>info@lilongwe.0rg</p>
+      <p>(+256)888-364-476</p>
+    </div>
+    <div>
+      <a href="https://www.youtube.com/"><img class="social-media" src="images/youtube.svg"></a>
+      <a href="https://x.com/"><img class="social-media" src="images/twitter.svg"></a>
+      <a href="https://www.linkedin.com/feed/"><img class="social-media" src="images/linkedin.svg"></a>
+    </div>
+    <div class="footer-copy">
+      <p>WDD231 Class Project</p>
+      <p>Peter Msamba</p>
+      <p>&copy;<span id="currentyear"></span><span id="lastModified"></span></p>
+    </div>
+  </footer>
+</body>
+
+</html>

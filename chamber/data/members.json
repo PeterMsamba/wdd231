@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Airtel Malawi",
+    "address": "Airtel Complex, City Centre, Lilongwe",
+    "phone": "+265 1 774 800",
+    "website": "https://www.airtel.mw",
+    "image": "images/airtel-malawi.webp",
+    "membershipLevel": 3,
+    "tagline": "Telecommunications"
+  },
+  {
+    "name": "Natural Resources College (NRC)",
+    "address": "Off M1 Road, Area 47, Lilongwe",
+    "phone": "+265 1 707 222",
+    "website": "https://www.luanar.ac.mw",
+    "image": "images/nrc-lilongwe.webp",
+    "membershipLevel": 2,
+    "tagline": "Education & Agriculture"
+  },
+  {
+    "name": "National Bank of Malawi",
+    "address": "NBM Towers, City Centre, Lilongwe",
+    "phone": "+265 1 771 900",
+    "website": "https://www.natbank.co.mw",
+    "image": "images/nbm-lilongwe.webp",
+    "membershipLevel": 3,
+    "tagline": "Banking"
+  },
+  {
+    "name": "Sunbird Capital Hotel",
+    "address": "Presidential Way, City Centre, Lilongwe",
+    "phone": "+265 1 773 388",
+    "website": "https://www.sunbirdmalawi.com",
+    "image": "images/sunbird-capital.webp",
+    "membershipLevel": 2,
+    "tagline": "Hospitality"
+  },
+  {
+    "name": "Lilongwe Handling Company (LIHACO)",
+    "address": "Kamuzu International Airport, Lilongwe",
+    "phone": "+265 996 466 610",
+    "website": "https://www.lihaco.net",
+    "image": "images/lihaco-airport.webp",
+    "membershipLevel": 2,
+    "tagline": "Aviation Services"
+  },
+  {
+    "name": "Grant Thornton Malawi",
+    "address": "City House, City Centre, Lilongwe",
+    "phone": "+265 1 772 322",
+    "website": "https://www.grantthornton.co.mw",
+    "image": "images/grant-thornton.webp",
+    "membershipLevel": 2,
+    "tagline": "Professional Services"
+  },
+  {
+    "name": "Afrox Malawi Limited",
+    "address": "29/9 Alimaunde Rd, Kanengo, Lilongwe",
+    "phone": "+265 1 710 374",
+    "website": "https://www.afrox.mw",
+    "image": "images/afrox-malawi.webp",
+    "membershipLevel": 1,
+    "tagline": "Industrial Gases"
+  },
+  {
+    "name": "Malawi Luxury Inc.",
+    "address": "7541 Chilambula Road, Lilongwe",
+    "phone": "+265 997 542 677",
+    "website": "https://malawiluxury.com",
+    "image": "images/malawi-luxury.webp",
+    "membershipLevel": 1,
+    "tagline": "Lifestyle & Retail"
+  }
+]
