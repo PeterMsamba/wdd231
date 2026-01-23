@@ -1,14 +1,5 @@
 [
   {
-    "name": "Airtel Malawi",
-    "address": "Airtel Complex, City Centre, Lilongwe",
-    "phone": "+265 1 774 800",
-    "website": "https://www.airtel.mw",
-    "image": "images/airtel.PNG",
-    "membershipLevel": 3,
-    "tagline": "Telecommunications"
-  },
-  {
     "name": "Natural Resources College (NRC)",
     "address": "Off M1 Road, Area 47, Lilongwe",
     "phone": "+265 1 707 222",
@@ -16,6 +7,15 @@
     "image": "images/nrc.jfif",
     "membershipLevel": 2,
     "tagline": "Education & Agriculture"
+  },
+  {
+    "name": "Airtel Malawi",
+    "address": "Airtel Complex, City Centre, Lilongwe",
+    "phone": "+265 1 774 800",
+    "website": "https://www.airtel.mw",
+    "image": "images/airtel.PNG",
+    "membershipLevel": 3,
+    "tagline": "Telecommunications"
   },
   {
     "name": "National Bank of Malawi",

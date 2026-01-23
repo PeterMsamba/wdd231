@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .card-container {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+    }
+    .card{
+      background-color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="display-area" class="card-container">
+
+  </div>
+  <script>
+    const data = [
+      { name: "peter", age: 12, address: "lilongwe" },
+      { name: "benja", age: 17, address: "lilongwe" }
+    ];
+    for(name of data){
+      console.log(name);
+    }
+    /*
+    const container = document.getElementById('display-area');
+    data.forEach(item => {
+      const card = document.createElement('div');
+      card.className = 'card';
+
+      card.innerHTML = `
+    <h3>${item.name}</h3>
+    <p>${item.age}</p>
+    <p>${item.address}</p>
+  `;
+      container.appendChild(card);
+    });
+*/
+const container = document.querySelector('#display-area');
+
+data.forEach(item=>{
+  const card = document.createElement('div');
+  card.className = 'card';
+  card.innerHTML = `
+  <h3>${item.name}</h3>
+    <p>${item.age}</p>
+    <p>${item.address}</p>
+  `;
+  container.appendChild(card);
+});
+
+  </script>
+</body>
+
+</html>
