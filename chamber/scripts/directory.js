@@ -8,13 +8,13 @@ menuBtn.addEventListener('click', () => {
 });
 
 
-const url = "data/members.json";
+const urldata = "data/members.json";
 const container = document.querySelector('#directory-container');
 const gridBtn = document.querySelector('#grid');
 const listBtn = document.querySelector('#list');
 
 async function getMembers() {
-  const response = await fetch(url);
+  const response = await fetch(urldata);
   const data = await response.json();
   displayMembers(data);
 }

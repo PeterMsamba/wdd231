@@ -1,41 +1,53 @@
 const cityName = document.querySelector('#city');
 const temp = document.querySelector('#temperature');
 const desc = document.querySelector('#description');
-const maxTemp = document.querySelector('max-temp');
-const minTemp = document.querySelector('#min-temp');
+// Fixed: added # and corrected id names to match HTML
+const maxTemp = document.querySelector('#max-temp'); 
 const humidity = document.querySelector('#humid');
 
 const apiKey = "ea58459c4528ad7d78f4ab0049e9af18";
-const lat = "-14.01915542210118";
-const log = "33.67055919535546";
-const link = `//api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${log}&appid=${apiKey}`
+const lat = "-14.01"; 
+const lon = "33.78"; 
+// Added &units=imperial for Fahrenheit
+const currentUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`;
+const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`;
 
 async function apiFetch() {
   try {
-    const response = await fetch(link);
+    // Fetch Current Weather
+    const response = await fetch(currentUrl);
     if (response.ok) {
       const data = await response.json();
-      console.log(data);
       displayResults(data);
-    } else {
-      throw Error(await response.text());
+    }
+
+    // Fetch Forecast
+    const fResponse = await fetch(forecastUrl);
+    if (fResponse.ok) {
+      const fData = await fResponse.json();
+      displayForecast(fData);
     }
   } catch (error) {
     console.log(error);
   }
 }
+
 function displayResults(data) {
   cityName.innerHTML = data.name;
-  desc.innerHTML = data.weather[0].description;
-  temp.innerHTML = `${data.main.temp}&deg;F`;
-  maxTemp.innerHTML = `${data.main.temp_max}`
-  humidity.innerHTML = `${data.main.humidity}`
-  const graphic = document.querySelector('#graphic');
-  const iconLink = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+  desc.innerHTML = `Condition: ${data.weather[0].description}`;
+  temp.innerHTML = `Current: ${Math.round(data.main.temp)}&deg;F`;
+  maxTemp.innerHTML = `High: ${Math.round(data.main.temp_max)}&deg;F`;
+  humidity.innerHTML = `Humidity: ${data.main.humidity}%`;
+}
 
-  console.log(iconLink);
-  graphic.setAttribute('SRC', iconLink);
-  graphic.setAttribute('alt', data.weather[0].description);
+function displayForecast(data) {
+  // Filters data to get one reading per day (at 12:00 PM)
+  const threeDayData = data.list.filter(item => item.dt_txt.includes("12:00:00")).slice(0, 3);
+  
+  const days = ['today', 'wednesday', 'thursday']; // Note: You might want to calculate day names dynamically
+  threeDayData.forEach((day, index) => {
+    document.getElementById(days[index]).innerHTML = `: ${Math.round(day.main.temp)}&deg;F`;
+  });
 }
 
 apiFetch();

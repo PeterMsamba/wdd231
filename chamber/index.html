@@ -4,42 +4,108 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Chamber of Commerce - Home</title>
+  <meta name="description" content="Home page display the weather, spotlight  and the call to action.">
+  <meta name="author" content="Peter Msamba">
+  <link rel="icon" href="images/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <meta property="og:title" content="City Chamber Business Home page">
+  <meta property="og:description" content="Connect with the best local businesses in our community.">
+  <meta property="og:image" content="images/logo.svg">
+  <meta property="og:url" content="https://petermsamba.github.io/wdd231/chamber/directory.html">
+
+  <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/home.css">
+  <link rel="stylesheet" href="styles/homelarge.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
   <script src="scripts/forecast.js" defer></script>
   <script src="scripts/spotlight.js" defer></script>
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/directory.js" defer></script>
 </head>
 
 <body>
-  <main>
+  <header>
+    <div class="header-top">
+      <div class="logo-container">
+        <img class="logo" src="images/logo.svg" alt="Chamber Logo">
+        <span>Lilongwe Chamber of Commerce</span>
+      </div>
+      <button id="menu"></button>
+    </div>
+
+    <nav>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html" class="active">Directory</a></li>
+        <li><a href="#">Join</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="home-container">
     <section class="hero">
-      <img src="" alt="Chamber Hero Image">
+      <img src="images/download.jfif" alt="hero picture">
       <div class="cta">
-        <a href="join.html">Join the Chamber Today!</a>
+        <h2>Building a Stronger Malawi</h2>
+        <a href="join.html" class="btn">Join the Chamber Today!</a>
       </div>
     </section>
 
-    <section class="events">
-      <h3>Current Events</h3>
-      <img src="" alt="">
-      <p id="city"></p>
-      <p id="temperature"></p>
-      <p id="description"></p>
-      <p id="max-temp"></p>
-      <p id="low-temp"></p>
-      <p id="humid"></p>
-    </section>
+    <div class="info-grid">
+      <section class="events">
+        <h3>Current Events</h3>
+        <div class="event-card">
+          <p><strong>Business Networking Expo</strong></p>
+          <p>Location: BICC, Lilongwe</p>
+        </div>
+      </section>
 
-    <section id="weather">
-      <h3>Weather Forecast</h3>
-      <P>Today<span id="today"></span></P>
-      <P>Wesdnesday <span id="wednesday"></span></P>
-      <P>Thursday <span id="thursday"></span></P>
-    </section>
+      <section id="weather">
+        <div id="weather-info">
+          <h3>Weather</h3>
+          <p id="city"></p>
+          <p id="temperature"></p>
+          <p id="description"></p>
+          <p id="max-temp"></p>
+          <p id="humid"></p>
+        </div>
+        <div>
+          <h4>Weather Forecast</h4>
+          <p>Today <span id="today"></span></p>
+          <p>Tomorrow <span id="wednesday"></span></p>
+          <p>Next Day <span id="thursday"></span></p>
+        </div>
+      </section>
+    </div>
 
     <section id="spotlights">
     </section>
   </main>
+  <footer>
+    <div class="footer-info">
+      <h4>Lilongwe Chamber of Commerce</h4>
+      <p>Likuni-NRC Road</p>
+      <p>info@lilongwe.0rg</p>
+      <p>(+256)888-364-476</p>
+    </div>
+    <div>
+      <a href="https://www.youtube.com/"><img class="social-media" src="images/youtube.svg" alt="youtube"></a>
+      <a href="https://x.com/"><img class="social-media" src="images/twitter.svg" alt="twitter"></a>
+      <a href="https://www.linkedin.com/feed/"><img class="social-media" src="images/linkedin.svg" alt="linkedin"></a>
+    </div>
+    <div class="footer-copy">
+      <p>WDD231 Class Project</p>
+      <p>Peter Msamba</p>
+      <p>&copy;<span id="currentyear"></span><span id="lastModified"></span></p>
+    </div>
+  </footer>
 </body>
 
 </html>
