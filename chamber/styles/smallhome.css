@@ -1,20 +1,47 @@
-/*Home page styles*/
-.bannar-img{
-  width: 550px;
-  height: 200px;
-  border-radius: 5px;
+/* General resets and Base Mobile Styles */
+.bannar-img {
+  width: 100%; /* Responsive width */
+  max-width: 1000px;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px;
+  object-fit: cover;
 }
-.bannar-section{
-  align-items: center;
-  text-align: center;
-}
-.first-section{
-  display: flex;
-  flex-direction: column;
-}
-main h2{
-  background-color: black;
-  color: white;
+
+.bannar-section {
   text-align: center;
   padding: 10px;
+}
+
+.first-section, .second-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 1rem;
+}
+
+main h1 {
+  text-align: center;
+  color: #333;
+}
+
+main h2 {
+  background-color: #2c3e50; /* Softer professional blue-black */
+  color: white;
+  text-align: center;
+  padding: 12px;
+  margin-top: 0;
+  border-radius: 5px 5px 0 0;
+}
+
+.first-section > div, .second-section > div {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  overflow: hidden; /* Keeps H2 corners rounded */
+}
+
+/* Weather styling */
+.temp {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
