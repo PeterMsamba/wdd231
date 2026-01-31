@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chamber of Commerce - Business Directory</title>
+  <meta name="description"
+    content="Official Business Directory for the Chamber of Commerce. Explore local businesses and services.">
+  <meta name="author" content="Peter Msamba">
+  <link rel="icon" href="images/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <meta property="og:title" content="City Chamber Business Directory">
+  <meta property="og:description" content="Connect with the best local businesses in our community.">
+  <meta property="og:image" content="images/logo.svg">
+  <meta property="og:url" content="https://petermsamba.github.io/wdd231/chamber/directory.html">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="stylesheet" href="styles/smallhome.css">
+  <link rel="stylesheet" href="styles/largehome.css">
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/directory.js" defer></script>
+  <script src="scripts/weather.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-top">
+      <div class="logo-container">
+        <img class="logo" src="images/logo.svg" alt="Chamber Logo">
+        <span>Lilongwe Chamber of Commerce</span>
+      </div>
+      <button id="menu"></button>
+    </div>
+
+    <nav>
+      <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="directory.html" class="active">Directory</a></li>
+        <li><a href="#">Join</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="bannar-section">
+      <img class="bannar-img" src="images/bannar.webp" alt="heros picture">
+    </section>
+    <h1>Home</h1>
+    <section class="first-section">
+      <div>
+        <h2>Events</h2>
+      </div>
+      <div>
+        <div>
+          <h2>Current Weather</h2>
+          <img src="" alt="Weather image">
+        </div>
+        <div>
+          <p class="temp"><span id="current-temp"></span>° F</p>
+          <p id="weather-desc" class="condition"></p>
+          <p>High: <span id="high-temp"></span>°</p>
+          <p>Low: <span id="low-temp"></span>°</p>
+          <p>Humidity: <span id="humidity"></span>%</p>
+          <p>Sunrise: <span id="sunrise"></span></p>
+          <p>Sunset: <span id="sunset"></span></p>
+        </div>
+      </div>
+      <div>
+        <h2>Weather Forecast</h2>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h2>Business Name</h2>
+      </div>
+      <div>
+        <h2>Business Name</h2>
+      </div>
+      <div>
+        <h2>Business Name</h2>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-info">
+      <h2>Lilongwe Chamber of Commerce</h2>
+      <p>Likuni-NRC Road</p>
+      <p>info@lilongwe.0rg</p>
+      <p>(+256)888-364-476</p>
+    </div>
+    <div>
+      <a href="https://www.youtube.com/"><img class="social-media" src="images/youtube.svg" alt="youtube"></a>
+      <a href="https://x.com/"><img class="social-media" src="images/twitter.svg" alt="twitter"></a>
+      <a href="https://www.linkedin.com/feed/"><img class="social-media" src="images/linkedin.svg" alt="linkedin"></a>
+    </div>
+    <div class="footer-copy">
+      <p>WDD231 Class Project</p>
+      <p>Peter Msamba</p>
+      <p>&copy;<span id="currentyear"></span><span id="lastModified"></span></p>
+    </div>
+  </footer>
+</body>
+
+</html>

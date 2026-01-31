@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather API</title>
+</head>
+
+<body>
+  <main>
+    <p class="city-name"></p>
+    <p>The current temperature in trier, Germany is <span class="current-temp"></span></p>
+    <figure>
+      <img id="weather-icon" src="" alt="weather icon">
+      <figcaption>Weather</figcaption>
+    </figure>
+  </main>
+  <footer>
+    <p>Pater Msamba</p>
+  </footer>
+  <script>
+    const cityName = document.querySelector('.city-name');
+    const CurrentTemp = document.querySelector('.current-temp');
+    const weatherIcon = document.querySelector('#weather-icon');
+    const captionDesc = document.querySelector('figcaption');
+
+    const mykey = "ea58459c4528ad7d78f4ab0049e9af18";
+    const myLat = "49.75159659127682";
+    const myLong = "6.6315901664774435";
+    const url = `//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${mykey}`
+    
+    async function apiFetch() {
+      try {
+        const response = await fetch(url);
+        if (response.ok) {
+          const data = await response.json();
+          console.log(data); // testing only
+          displayResults(data); // uncomment when ready
+        } else {
+          throw Error(await response.text());
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    }
+/*
+    function displayResults(data){
+    console.log('hello');
+    cityName.innerHTML = data.name;
+    CurrentTemp.innerHTML = data.main.temp;
+   // weatherIcon.innerHTML = weather[0].description
+   //
+;
+    }
+   */
+  apiFetch();
+  
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Practice</title>
+
+  <style>
+    
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>API Weather Tab</h1>
+    <div class="card">
+      <h2 id="city"></h2>
+      <img id="graphic" src="" alt="">
+      <p id="temperature"></p>
+      <p id="description"></p>
+  </main>
+
+  <script>
+    const cityName = document.querySelector('#city');
+    const temp = document.querySelector('#temperature');
+    const desc = document.querySelector('#description');
+
+    const apiKey = "ea58459c4528ad7d78f4ab0049e9af18";
+    const lat = "-33.84553250741103";
+    const log = "151.20768004058368";
+    const url = `//api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${log}&appid=${apiKey}`
+
+    async function apiFetch() {
+      try {
+        const response = await fetch(url);
+        if (response.ok) {
+          const data = await response.json();
+          console.log(data);
+          displayResults(data);
+        } else {
+          throw Error(await response.text());
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    }
+    function displayResults(data) {
+      cityName.innerHTML = data.name;
+      desc.innerHTML = data.weather[0].description;
+      temp.innerHTML = `${data.main.temp}&deg;F`;
+
+      const graphic = document.querySelector('#graphic');
+      const iconLink = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+      
+      console.log(iconLink);
+      graphic.setAttribute('SRC', iconLink);
+      graphic.setAttribute('alt', data.weather[0].description);
+    }
+
+    apiFetch();
+  </script>
+
+</body>
+
+</html>

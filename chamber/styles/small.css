@@ -91,6 +91,7 @@ header {
   padding: 1rem;
 }
 
+
 #directory-container.grid section {
   border: 1px solid #ddd;
   padding: 1rem;
@@ -130,7 +131,6 @@ header {
   width: 40px;
   margin: 10px;
 }
-
 footer {
   display: flex;
   flex-direction: column;

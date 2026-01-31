@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question Quiz</title>
+</head>
+<body>
+  <div class="que-div">
+
+  </div>
+  <script>
+    const queDiv = document.querySelector('.que-div');
+    const questions = [
+      {
+        question : "What is the smallest number?",
+        answers : [
+          {text: 2, correct: true},
+          {text: 23, correct: false},
+          {text: 24, correct:  false},
+          {text: 12, correct: false}
+        ]
+      },
+      {
+        question : "What is the biggedt number?",
+        answers : [
+          {text: 2, correct: false},
+          {text: 23, correct: false},
+          {text: 24, correct:  true},
+          {text: 12, correct: false}
+        ]
+      }
+    ];
+    function checkingAnswer(selectAnswer){
+      if (selectAnswer.correct){
+        console.log("Result correct");
+      }else{
+        console.log("Result wrong");
+      }
+    }
+   console.log(questions[0].answers[0]);
+   const answ = questions[0].answers[0];
+   answ.forEach(answer =>{
+    const card2 = document.createElement('div');
+    card.innerHTML = `
+    <a>${answer.text}</a>
+    `;
+    card.appendChild(card2);
+   });
+    questions.forEach(item => {
+      const card = document.createElement('div');
+
+      card.innerHTML = `
+      <p>${item.question}</p>
+      <a>A.${item.answers}</a>
+      `;
+      queDiv.appendChild(card);
+    });
+  </script>
+</body>
+</html>

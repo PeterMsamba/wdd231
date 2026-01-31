@@ -1,0 +1,19 @@
+/*Home page styles*/
+.bannar-img{
+  width: 550px;
+  height: 200px;
+  border-radius: 5px;
+}
+.bannar-section{
+  align-items: center;
+  text-align: center;
+}
+.first-section{
+  display: flex;
+  flex-direction: column;
+}
+main h2{
+  background-color: black;
+  color: white;
+  text-align: center;
+}

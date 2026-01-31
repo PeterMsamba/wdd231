@@ -1,0 +1,20 @@
+@media (min-width: 600px) {
+  .bannar-img {
+    width: 1000px;
+    height: 200px;
+  }
+
+  .first-section {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 1;
+    gap: 10px;
+    justify-content: space-between;
+  }
+
+  main h2 {
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+}

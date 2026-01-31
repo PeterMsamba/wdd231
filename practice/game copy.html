@@ -1,0 +1,59 @@
+<body>
+  <div class="que-div"></div>
+
+  <script>
+    const queDiv = document.querySelector('.que-div');
+    const questions = [
+      {
+        question: "What is the smallest number?",
+        answers: [
+          { text: 2, correct: true },
+          { text: 23, correct: false },
+          { text: 24, correct: false },
+          { text: 12, correct: false }
+        ]
+      },
+      {
+        question: "What is the biggest number?",
+        answers: [
+          { text: 2, correct: false },
+          { text: 23, correct: false },
+          { text: 24, correct: true },
+          { text: 12, correct: false }
+        ]
+      }
+    ];
+
+    // Main loop: Create a card for each question
+    questions.forEach((item) => {
+      const card = document.createElement('div');
+      card.style.border = "1px solid #ccc"; // Added a little styling to see the cards
+      card.style.margin = "10px";
+      card.style.padding = "10px";
+
+      // 1. Set the question text
+      card.innerHTML = `<h3>${item.question}</h3>`;
+
+      // 2. Loop through the answers for THIS specific question
+      item.answers.forEach((ans) => {
+        const btn = document.createElement('button');
+        btn.innerText = ans.text;
+        btn.style.marginRight = "5px";
+
+        // 3. Add the click event to check the answer
+        btn.onclick = () => {
+          if (ans.correct) {
+            alert("Correct!");
+          } else {
+            alert("Wrong answer!");
+          }
+        };
+
+        card.appendChild(btn);
+      });
+
+      // 4. Add the finished card to the main container
+      queDiv.appendChild(card);
+    });
+  </script>
+</body>
