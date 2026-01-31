@@ -13,6 +13,11 @@
 .first-section div{
   border: 1px solid grey;
   }
+.second-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
   main h2 {
     background-color: black;
     color: white;
