@@ -5,13 +5,14 @@
   }
 
   .first-section {
-    display: flex;
-    flex-direction: row;
-    flex: 1 1 1;
+    display: grid;
+    grid-template-columns: 1fr 300px 300px;
     gap: 10px;
-    justify-content: space-between;
+    
   }
-
+.first-section div{
+  border: 1px solid grey;
+  }
   main h2 {
     background-color: black;
     color: white;
