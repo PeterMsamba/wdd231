@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thank You - Chamber of Commerce</title>
+    <link rel="stylesheet" href="css/base.css">
+    <style>
+        .result-box {
+            background: #eee;
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 600px;
+            border-radius: 8px;
+        }
+        .result-box p { margin: 10px 0; border-bottom: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Thank You for Joining!</h1>
+        <p>Your application has been received. Here is the information you submitted:</p>
+        
+        <div id="results" class="result-box">
+            </div>
+    </main>
+
+    <script>
+        // Get URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const resultsContainer = document.getElementById('results');
+
+        // Fields to display
+        const fields = ['fname', 'lname', 'email', 'phone', 'org-name', 'timestamp'];
+        const labels = ['First Name', 'Last Name', 'Email', 'Phone', 'Organization', 'Submission Time'];
+
+        fields.forEach((field, index) => {
+            if (urlParams.has(field)) {
+                const p = document.createElement('p');
+                p.innerHTML = `<strong>${labels[index]}:</strong> ${decodeURIComponent(urlParams.get(field).replace(/\+/g, ' '))}`;
+                resultsContainer.appendChild(p);
+            }
+        });
+    </script>
+</body>
+</html>
