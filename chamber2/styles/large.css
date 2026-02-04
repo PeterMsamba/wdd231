@@ -1,63 +1,62 @@
-/* Media Query for screens 600px and wider */
-@media (min-width: 600px) {
-    
-    /* Header & Navigation */
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 1rem 5%;
-    }
-
-    #menu-button {
-        display: none; /* Hide the hamburger menu on desktop */
-    }
-
-    #nav-menu {
-        display: flex;
-        list-style: none;
-        gap: 2rem;
-    }
-
-    #nav-menu li a {
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-    #nav-menu li a:hover {
-        text-decoration: underline;
-        color: #ecf0f1;
-    }
-
-    /* Directory Layout Refinement */
-    .grid {
-        grid-template-columns: repeat(3, 1fr); /* Force 3 columns on large screens */
+@media (min-width: 640px) {
+    .header-top {
         max-width: 1200px;
         margin: 0 auto;
     }
 
-    .grid section {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: center;
+        background-color: #000;
+        margin-top: 0;
+    }
+
+    .navigation li {
+        flex: 1;
+        max-width: 200px;
+    }
+
+    /* Desktop Grid */
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1200px;
+        margin: 20px auto;
     }
 
     .grid section:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        transform: scale(1.02);
+        transition: 0.3s;
     }
 
-    /* List Layout Refinement */
+    /* Desktop List */
     .list section {
-        grid-template-columns: 2fr 1fr 1fr 1fr;
-        padding: 1rem 2rem;
+        display: grid;
+        grid-template-columns: 2fr 1.5fr 1fr 1fr;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
     }
 
-    /* Footer */
-    footer {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-        padding: 2rem;
+    .list section h3 {
+        font-size: 1rem;
+    }
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left; /* Contact stays left, Project stays right */
+    }
+
+    .footer-project {
+        text-align: right;
+    }
+
+    .footer-social {
+        flex-grow: 1; /* Pushes the left and right sides away */
     }
 }
