@@ -147,6 +147,41 @@ header {
     margin: 0 10px;
     filter: invert(1);
 }
+
+/* Discover styles*/
+.discover-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "a1" "a2" "a3" "a4"
+        "a5" "a6" "a7" "a8";
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.visitor-box {
+    background: var(--primary-color, #005f73);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
 footer {
     color: var(--footer-text);
     padding: 2rem 1rem;

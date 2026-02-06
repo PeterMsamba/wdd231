@@ -45,6 +45,32 @@
     .list section h3 {
         font-size: 1rem;
     }
+/*Discover page*/
+    .discover-grid {
+        grid-template-columns: repeat(4, 1fr);
+        /* Drawing a custom layout: area 1 and 5 take double width */
+        grid-template-areas: 
+            "a1 a1 a2 a3"
+            "a4 a5 a5 a3"
+            "a6 a7 a8 a8";
+    }
+
+    .area-1 { grid-area: a1; }
+    .area-2 { grid-area: a2; }
+    .area-3 { grid-area: a3; }
+    .area-4 { grid-area: a4; }
+    .area-5 { grid-area: a5; }
+    .area-6 { grid-area: a6; }
+    .area-7 { grid-area: a7; }
+    .area-8 { grid-area: a8; }
+
+    /* Hover effect required by instructions */
+    .card figure img:hover {
+        filter: sepia(50%) brightness(1.1);
+        transform: scale(1.02);
+        transition: 0.3s ease;
+    }
+
     .footer-container {
         flex-direction: row;
         justify-content: space-between;
