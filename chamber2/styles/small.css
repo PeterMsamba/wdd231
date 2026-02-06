@@ -3,6 +3,7 @@
     --accent-color: #005f73;
     --bg-color: #f4f4f4;
     --text-light: #fff;
+    --footer-text: #ffffff;
 }
 
 * {
@@ -83,8 +84,7 @@ header {
     text-align: center;
 }
 
-.navigation a:hover,
-.active {
+.navigation a:hover{
     background-color: #444;
 }
 
@@ -142,27 +142,17 @@ header {
     display: none;
 }
 
-footer {
-    background-color: var(--primary-color);
-    color: white;
-    text-align: center;
-    padding: 2rem;
-    margin-top: 20px;
-}
-
 .social-links img {
     width: 30px;
     margin: 0 10px;
     filter: invert(1);
 }
 footer {
-    background-color: var(--footer-bg);
     color: var(--footer-text);
     padding: 2rem 1rem;
     margin-top: 30px;
     font-size: 0.9rem;
     background-color: var(--primary-color);
-    color: white;
 }
 
 .footer-container {
