@@ -1,0 +1,21 @@
+<body>
+  <div class="game-container">
+    <h1>Live Clicker</h1>
+    <div id="counter">0</div>
+    <button id="clickBtn">Click Me!</button>
+  </div>
+
+  <script>
+    const clickbtnz = document.querySelector('#clickBtn');
+    const display = document.querySelector('#counter');
+
+    let number = 0;
+
+    clickbtnz.addEventListener('click', () => {
+      number = number + 1;
+    
+      display.textContent = number;
+      console.log(number);
+    });
+  </script>
+</body>
