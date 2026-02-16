@@ -19,59 +19,63 @@
   <meta property="og:image" content="images/logo.svg">
   <meta property="og:url" content="https://petermsamba.github.io/wdd231/chamber/directory.html">
 
-  <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/small.css">
-  <link rel="stylesheet" href="styles/larger.css">
-  <script src="scripts/getdates.js" defer></script>
+  <link rel="stylesheet" href="styles/large.css" media="(min-width: 640px)">
   <script src="scripts/directory.js" defer></script>
 </head>
 
 <body>
   <header>
-    <div  class="header-top">
+    <div class="header-top">
       <div class="logo-container">
-        <img class="logo" src="images/logo.svg" alt="Chamber Logo">
-        <span>Lilongwe Chamber of Commerce</span>
+        <img class="logo-img" src="images/logo.svg" alt="Lilongwe Chamber Logo">
+        <span class="lilongwe-head">Lilongwe Chamber Of Commerce</span>
       </div>
-      <button id="menu"></button>
+      <div id="mode">
+        <span id="mode-icon">🌙</span>
+      </div>
+      <button id="menu" aria-label="Toggle menu"></button>
     </div>
-    
     <nav>
       <ul class="navigation">
         <li><a href="index.html">Home</a></li>
         <li><a href="directory.html" class="active">Directory</a></li>
-        <li><a href="#">Join</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <h1>Local Businesses</h1>
-    <div class="directory-controls">
-      <button id="grid">Grid View</button>
-      <button id="list">List View</button>
+    <div class="menu-controls">
+      <button id="grid-view" title="Grid View">Grid View</button>
+      <button id="list-view" title="List View">List View</button>
     </div>
-    <div id="directory-container" class="grid">
-    </div>
+    <article id="member-container" class="grid"></article>
   </main>
 
   <footer>
-    <div class="footer-info">
-      <h2>Lilongwe Chamber of Commerce</h2>
-      <p>Likuni-NRC Road</p>
-      <p>info@lilongwe.0rg</p>
-      <p>(+256)888-364-476</p>
-    </div>
-    <div>
-      <a href="https://www.youtube.com/"><img class="social-media" src="images/youtube.svg" alt="youtube"></a>
-      <a href="https://x.com/"><img class="social-media" src="images/twitter.svg" alt="twitter"></a>
-      <a href="https://www.linkedin.com/feed/"><img class="social-media" src="images/linkedin.svg" alt="linkedin"></a>
-    </div>
-    <div class="footer-copy">
-      <p>WDD231 Class Project</p>
-      <p>Peter Msamba</p>
-      <p>&copy;<span id="currentyear"></span><span id="lastModified"></span></p>
+    <div class="footer-container">
+      <div class="footer-contact">
+        <p><strong>Lilongwe Chamber of Commerce</strong></p>
+        <p>123 Capital Hill Road</p>
+        <p>Lilongwe, Malawi 999</p>
+        <p>info@lilongwecc.org</p>
+        <p>(265) 888-123456</p>
+      </div>
+
+      <div class="footer-social">
+        <a href="#"><img src="images/youtube.svg" alt="YouTube"></a>
+        <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
+        <a href="#"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+      </div>
+
+      <div class="footer-project">
+        <p>WDD231 Class Project</p>
+        <p>Peter Msamba</p>
+        <p>&copy; <span id="current-year"></span> Lilongwe Chamber of Commerce</p>
+        <p id="lastModified"></p>
+      </div>
     </div>
   </footer>
 </body>
