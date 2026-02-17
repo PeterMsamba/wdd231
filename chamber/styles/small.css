@@ -3,12 +3,9 @@
     --secondary-color: #d11100;
     --accent-color: #004a99;
     --bg-color: #f4f4f4;
-    --text-light: #fff;
-    --footer-text: #ffffff;
-    
-    /* Malawi Flag Red */
-    --text-dark: #333;
-    --bg-light: #f4f4f4;
+    --white: #ffffff;
+    --text-dark: #333333;
+    --border-color: #dddddd;
 }
 
 * {
@@ -20,6 +17,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--bg-color);
+    color: var(--text-dark);
     line-height: 1.6;
 }
 
@@ -28,7 +26,7 @@ body {
 }
 
 header {
-    background-color: var(--text-light);
+    background-color: var(--white);
     color: #000;
     padding: 1rem;
     border-bottom: 5px solid var(--accent-color);
@@ -169,10 +167,11 @@ header {
 }
 
 .card {
-    background: #fff;
-    border: 1px solid #ddd;
-    padding: 1rem;
+    background-color: #ffffff;
+    padding: 1.5rem;
     border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .card img {
@@ -192,7 +191,7 @@ header {
 }
 
 footer {
-    color: var(--footer-text);
+    color: var(--white);
     padding: 2rem 1rem;
     margin-top: 30px;
     font-size: 0.9rem;
