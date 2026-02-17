@@ -1,0 +1,18 @@
+@media (min-width: 800px) {
+  .info-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #weather {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+#weather-info{
+  margin-right: 10px;
+  border-right: 1px solid gray;
+}
+  .hero img {
+    height: 500px;
+  }
+}
