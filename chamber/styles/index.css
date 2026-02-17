@@ -4,14 +4,6 @@
   padding: 1rem;
 }
 
-.card {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  margin-bottom: 1rem;
-}
-
 /* Hero Section */
 .hero {
   position: relative;
@@ -46,16 +38,28 @@
 }
 
 /* Layout Grid */
-.info-grid, #spotlights-grid {
+.info-grid,
+#spotlights-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
 }
 
 /* Weather Specifics */
-.temp-large { font-size: 2rem; font-weight: bold; color: var(--primary-color); }
-.capitalize { text-transform: capitalize; }
-#forecast-container p { border-bottom: 1px solid #eee; padding: 5px 0; }
+.temp-large {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+#forecast-container p {
+  border-bottom: 1px solid #eee;
+  padding: 5px 0;
+}
 
 /* Spotlight Cards */
 .spotlight-card {
@@ -64,12 +68,20 @@
   padding: 1rem;
   text-align: center;
 }
-.spotlight-card img { max-width: 1200px; height: 100px; object-fit: contain; }
+
+.spotlight-card img {
+  max-width: 1200px;
+  height: 100px;
+  object-fit: contain;
+}
 
 /* Desktop View */
 @media (min-width: 768px) {
-  .info-grid { grid-template-columns: 1fr 1fr; }
-  #spotlights-section{
+  .info-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #spotlights-section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;

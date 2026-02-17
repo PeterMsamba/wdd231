@@ -40,12 +40,7 @@ input, textarea, fieldset {
     gap: 1rem;
 }
 
-.card {
-    border: 1px solid #ddd;
-    padding: 1.5rem;
-    text-align: center;
-    background: #f9f9f9;
-}
+
 
 /* Modal Styling */
 dialog {
