@@ -1,26 +1,43 @@
-export async function initRooms() {
-    const grid = document.querySelector('#all-rooms-grid');
-    
+const url = 'data/rooms.json';
+export async function fetchRooms(limit = null) {
     try {
-        const response = await fetch('data/rooms.json');
-        if (!response.ok) throw new Error('Failed to fetch room data');
-        
-        const data = await response.json();
-        renderRooms(data.rooms, grid);
+        const response = await fetch(url);
+        if (response.ok) {
+            const data = await response.json();
+            let rooms = data.rooms;
+
+            // If a limit is passed (e.g., 3 for index.html), shuffle and slice
+            if (limit) {
+                rooms = rooms.sort(() => 0.5 - Math.random()).slice(0, limit);
+            }
+
+            displayRooms(rooms);
+        } else {
+            throw Error(await response.text());
+        }
     } catch (error) {
-        grid.innerHTML = `<p class="error">Error loading rooms: ${error.message}</p>`;
+        console.error("Error fetching data:", error);
     }
 }
 
-function renderRooms(rooms, container) {
-    container.innerHTML = rooms.map(room => `
-        <section class="card">
-            <img src="${room.image}" alt="${room.name}" loading="lazy">
+function displayRooms(rooms) {
+    // The selector matches the IDs in your HTML
+    const container = document.querySelector("#featured-grid") || document.querySelector("#all-rooms-grid");
+    if (!container) return;
+
+    container.innerHTML = ""; 
+
+    rooms.forEach(room => {
+        let card = document.createElement("section");
+        card.className = "card";
+        card.innerHTML = `
+            <img src="${room.image}" alt="${room.name}" loading="lazy" width="300" height="200">
             <h3>${room.name}</h3>
             <p><strong>Type:</strong> ${room.type}</p>
             <p><strong>Amenities:</strong> ${room.amenities}</p>
-            <p><strong>Price:</strong> $${room.price}/mo</p>
-            <button class="details-btn" onclick="alert('Booking feature coming soon!')">View Details</button>
-        </section>
-    `).join('');
+            <p class="price">$${room.price}/month</p>
+            <button class="details-btn" data-id="${room.id}">View Details</button>
+        `;
+        container.appendChild(card);
+    });
 }
