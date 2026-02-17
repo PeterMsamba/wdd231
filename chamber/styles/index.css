@@ -1,11 +1,3 @@
-/* Base Styles */
-:root {
-  --primary-color: #004a99;
-  --secondary-color: #d11100; /* Malawi Flag Red */
-  --text-dark: #333;
-  --bg-light: #f4f4f4;
-}
-
 .home-container {
   max-width: 1200px;
   margin: 0 auto;

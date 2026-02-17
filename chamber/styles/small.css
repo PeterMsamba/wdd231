@@ -1,25 +1,32 @@
 :root {
-    --primary-color: #005f73;
-    --accent-color: #005f73;
+    --primary-color: #004a99;
+    --secondary-color: #d11100;
+    --accent-color: #004a99;
     --bg-color: #f4f4f4;
     --text-light: #fff;
     --footer-text: #ffffff;
+    
+    /* Malawi Flag Red */
+    --text-dark: #333;
+    --bg-light: #f4f4f4;
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-} 
+}
 
 body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--bg-color);
     line-height: 1.6;
 }
-.lilongwe-head{
+
+.lilongwe-head {
     font-size: 30px;
 }
+
 header {
     background-color: var(--text-light);
     color: #000;
@@ -44,11 +51,13 @@ header {
     align-items: center;
     font-weight: 700;
 }
+
 #mode {
     cursor: pointer;
     font-size: 1.5rem;
     padding: 5px;
 }
+
 /* Hamburger Menu */
 #menu::before {
     content: "☰";
@@ -84,7 +93,7 @@ header {
     text-align: center;
 }
 
-.navigation a:hover{
+.navigation a:hover {
     background-color: #444;
 }
 
@@ -152,7 +161,7 @@ header {
 .discover-grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: 
+    grid-template-areas:
         "a1" "a2" "a3" "a4"
         "a5" "a6" "a7" "a8";
     gap: 1.5rem;
@@ -192,15 +201,16 @@ footer {
 
 .footer-container {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    
+
 }
 
-.footer-contact p, .footer-project p {
+.footer-contact p,
+.footer-project p {
     margin: 0.2rem 0;
 }
 
@@ -212,6 +222,6 @@ footer {
 }
 
 .footer-social img {
-    width: 40px; 
+    width: 40px;
     height: auto;
 }
