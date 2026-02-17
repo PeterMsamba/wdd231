@@ -189,6 +189,19 @@ header {
     margin-bottom: 1rem;
     font-weight: bold;
 }
+/*Thanks page styles*/
+.result-box {
+      background: #eee;
+      padding: 2rem;
+      margin: 2rem auto;
+      max-width: 600px;
+      border-radius: 8px;
+    }
+
+    .result-box p {
+      margin: 10px 0;
+      border-bottom: 1px solid #ccc;
+    }
 
 footer {
     color: var(--white);
