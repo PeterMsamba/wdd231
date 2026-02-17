@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | PickFord Acres Hostel</title>
+    <meta name="description" content="Premium student living and hostel management at PickFord Acres.">
+    <meta name="author" content="Your Name">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 600px)">
+    <script type="module" src="scripts/main.js"></script>
+</head>
+<body>
+    <header>
+        <h1>PickFord Acres</h1>
+        <button id="menu-button" aria-label="Open Menu">&#9776;</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="booking.html">Booking</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/hero.jpg" alt="Hostel Banner">
+            <div class="hero-content">
+                <h2>Your Home Away From Home</h2>
+                <p>Modern, safe, and professional student accommodations.</p>
+                <a href="rooms.html" class="cta-btn">View Golden Rooms</a>
+            </div>
+        </section>
+
+        <section>
+            <h2 style="text-align: center; padding: 2rem 0;">Our Featured Rooms</h2>
+            <div id="all-rooms-grid" class="grid-container">
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> PickFord Acres | <a href="attributions.html">Attributions</a></p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

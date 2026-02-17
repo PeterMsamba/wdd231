@@ -1,0 +1,19 @@
+@media (min-width: 600px) {
+  header { padding: 1rem 5%; }
+
+  #menu-button { display: none; }
+
+  nav { display: block; width: auto; }
+
+  nav ul { display: flex; gap: 20px; }
+
+  nav a { border: none; padding: 0.5rem; }
+
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .hero-content { width: 50%; }
+}

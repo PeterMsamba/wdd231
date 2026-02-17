@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Availability | PickFord Acres</title>
+    <meta name="description" content="Browse all available student rooms at PickFord Acres Hostel.">
+    <meta name="author" content="Your Name">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 600px)">
+    <script type="module" src="scripts/main.js"></script>
+</head>
+<body>
+    <header>
+        <h1>PickFord Acres</h1>
+        <button id="menu-button" aria-label="Toggle Menu">&#9776;</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html" class="active">Rooms</a></li>
+                <li><a href="booking.html">Booking</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-intro">
+            <h2>Find Your Perfect Space</h2>
+            <p>Explore our diverse range of layouts designed for modern student living.</p>
+        </section>
+
+        <div id="all-rooms-grid" class="grid-container">
+            <p>Loading available rooms...</p>
+        </div>
+    </main>
+
+    <dialog id="room-modal">
+        <div id="modal-content"></div>
+        <button id="close-modal">Close</button>
+    </dialog>
+
+    <footer>
+        <p>&copy; <span id="year"></span> PickFord Acres | <a href="attributions.html">Attributions</a></p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

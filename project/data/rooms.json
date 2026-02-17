@@ -1,0 +1,19 @@
+{
+  "rooms": [
+    { "id": 1, "name": "Golden Suite A1", "type": "Single", "price": 450, "amenities": "AC, WiFi, Ensuite", "image": "images/room1.jpg", "featured": true },
+    { "id": 2, "name": "Premium Vista", "type": "Double", "price": 300, "amenities": "WiFi, Balcony", "image": "images/room2.jpg", "featured": true },
+    { "id": 3, "name": "Standard Scholar", "type": "Single", "price": 200, "amenities": "Study Desk, WiFi", "image": "images/room3.jpg", "featured": false },
+    { "id": 4, "name": "Lake View Loft", "type": "Studio", "price": 500, "amenities": "Kitchenette, WiFi", "image": "images/room4.jpg", "featured": true },
+    { "id": 5, "name": "Economy Shared", "type": "Shared", "price": 150, "amenities": "Locker, WiFi", "image": "images/room5.jpg", "featured": false },
+    { "id": 6, "name": "The Executive", "type": "Single", "price": 550, "amenities": "Mini-fridge, AC", "image": "images/room6.jpg", "featured": true },
+    { "id": 7, "name": "Garden View", "type": "Double", "price": 320, "amenities": "Patio, WiFi", "image": "images/room7.jpg", "featured": false },
+    { "id": 8, "name": "Quiet Corner", "type": "Single", "price": 210, "amenities": "Study Lamp, WiFi", "image": "images/room8.jpg", "featured": false },
+    { "id": 9, "name": "Urban Studio", "type": "Studio", "price": 480, "amenities": "Smart TV, WiFi", "image": "images/room9.jpg", "featured": false },
+    { "id": 10, "name": "Budget Twin", "type": "Double", "price": 250, "amenities": "WiFi, Fan", "image": "images/room10.jpg", "featured": false },
+    { "id": 11, "name": "Penthouse Dorm", "type": "Shared", "price": 180, "amenities": "AC, Roof Access", "image": "images/room11.jpg", "featured": false },
+    { "id": 12, "name": "Sunrise Suite", "type": "Single", "price": 460, "amenities": "Ensuite, WiFi", "image": "images/room12.jpg", "featured": false },
+    { "id": 13, "name": "Mid-Town Studio", "type": "Studio", "price": 490, "amenities": "WiFi, Laundry", "image": "images/room13.jpg", "featured": false },
+    { "id": 14, "name": "The Library Room", "type": "Single", "price": 230, "amenities": "Bookshelves, WiFi", "image": "images/room14.jpg", "featured": false },
+    { "id": 15, "name": "Classic Double", "type": "Double", "price": 280, "amenities": "WiFi, Desk", "image": "images/room15.jpg", "featured": false }
+  ]
+}
