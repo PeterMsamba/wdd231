@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,11 +21,12 @@
     <meta property="og:image:height" content="630">
     <meta property="og:image:type" content="image/jpeg">
     <title>Booking & Contact | PickFord Acres</title>
-    
+
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css" media="(min-width: 600px)">
     <script type="module" src="scripts/main.js"></script>
 </head>
+
 <body>
     <header>
         <div class="logo-div">
@@ -47,9 +49,12 @@
             <form id="booking-form" action="thanks.html" method="get">
                 <fieldset>
                     <legend>Personal Information</legend>
-                    <label for="fname">First Name* <input type="text" id="fname" name="fname" required></label>
-                    <label for="lname">Last Name* <input type="text" id="lname" name="lname" required></label>
-                    <label for="email">Email* <input type="email" id="email" name="email" required placeholder="name@example.com"></label>
+                    <div class="name-row"> <label for="fname">First Name* <input type="text" id="fname" name="fname"
+                                required></label>
+                        <label for="lname">Last Name* <input type="text" id="lname" name="lname" required></label>
+                    </div>
+                    <label for="email">Email* <input type="email" id="email" name="email" required
+                            placeholder="name@example.com"></label>
                 </fieldset>
 
                 <fieldset>
@@ -84,4 +89,5 @@
         <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
 </body>
+
 </html>
