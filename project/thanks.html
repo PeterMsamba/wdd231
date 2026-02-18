@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservation Confirmed | PickFord Acres</title>
     <meta name="description" content="Confirmation page for your hostel reservation at PickFord Acres.">
-    <meta name="author" content="Your Name">
+    <meta name="author" content="Peter Msamba">
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <meta property="og:title" content="City Chamber Business Directory">
+    <meta property="og:description" content="Connect with the best local businesses in our community.">
+    <meta property="og:image" content="images/logo.svg">
+    <meta property="og:url" content="https://petermsamba.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://yourdomain.com/images/hero-large.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/jpeg">
+    <title>Reservation Confirmed | PickFord Acres</title>
+
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css" media="(min-width: 600px)">
     <script type="module" src="scripts/main.js"></script>
     <script type="module" src="scripts/thanks.js"></script>
 </head>
+
 <body>
     <header>
-        <div class="logo-area">
+        <div class="logo-div">
+            <img class="logo-img" src="images/logo.svg" alt="pickFord logo">
             <h1>PickFord Acres</h1>
         </div>
         <button id="menu-button" aria-label="Toggle Menu">&#9776;</button>
@@ -30,9 +48,9 @@
         <section class="thanks-container">
             <h2>Thank You for Your Reservation!</h2>
             <p>We have received your request. Below are the details you provided:</p>
-            
+
             <div id="results" class="results-box">
-                </div>
+            </div>
 
             <p>A confirmation email will be sent to the address provided shortly.</p>
             <a href="index.html" class="cta-btn">Return Home</a>
@@ -44,4 +62,5 @@
         <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
 </body>
+
 </html>

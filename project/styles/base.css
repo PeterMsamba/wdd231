@@ -29,7 +29,16 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
+.logo-img{
+  width: 80px;
+  border-radius: 50%;
+}
+.logo-div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
 #menu-button {
   background: none;
   border: none;
@@ -112,6 +121,48 @@ nav a.active {
 .card p {
   padding: 0 1rem;
   margin-top: 0.5rem;
+}
+
+/* Add to base.css or large.css */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  /* Lifts the card up */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Add to base.css */
+dialog {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.3s allow-discrete;
+}
+
+dialog[open] {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Starting state for the background dimming */
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0);
+  transition: display 0.3s allow-discrete, background-color 0.3s;
+}
+
+dialog[open]::backdrop {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.cta-btn {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-btn:active {
+  transform: scale(0.95);
+  /* Squish effect when clicked */
 }
 
 /*Thanks page*/

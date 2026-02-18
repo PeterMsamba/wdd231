@@ -35,7 +35,7 @@ function displayRooms(rooms) {
             <h3>${room.name}</h3>
             <p><strong>Type:</strong> ${room.type}</p>
             <p><strong>Amenities:</strong> ${room.amenities}</p>
-            <p class="price">$${room.price}/month</p>
+            <p class="price">MWK${room.price}/month</p>
             <button class="details-btn" data-id="${room.id}">View Details</button>
         `;
         container.appendChild(card);

@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
 import { fetchRooms } from './rooms.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Menu Toggle Logic (Already working)
     const menuButton = document.querySelector('#menu-button');
     const navMenu = document.querySelector('#nav-menu');
 
