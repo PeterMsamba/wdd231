@@ -282,7 +282,10 @@ select {
   justify-content: center;
   border-radius: 4px;
 }
-
+.demo-div{
+color: #F4F7F6;
+font-weight: 700;
+}
 footer {
   background: var(--primary);
   color: white;
