@@ -154,7 +154,6 @@ dialog[open] {
 dialog::backdrop {
   background-color: rgba(0, 0, 0, 0);
   transition: background-color 0.3s ease, display 0.3s ease;
-  transition-behavior: allow-discrete;
 }
 
 dialog[open]::backdrop {
