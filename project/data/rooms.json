@@ -1,0 +1,139 @@
+{
+  "rooms": [
+    {
+      "id": 1,
+      "name": "Golden Suite A1",
+      "type": "Single",
+      "price": 50000,
+      "amenities": "AC, WiFi, Ensuite",
+      "image": "images/room (1).jpg",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "name": "Premium Vista",
+      "type": "Double",
+      "price": 35000,
+      "amenities": "WiFi, Balcony",
+      "image": "images/room (2).jpg",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "name": "Standard Scholar",
+      "type": "Single",
+      "price": 45000,
+      "amenities": "Study Desk, WiFi",
+      "image": "images/room (3).jpg",
+      "featured": false
+    },
+    {
+      "id": 4,
+      "name": "Lake View Loft",
+      "type": "Studio",
+      "price": 20000,
+      "amenities": "Kitchenette, WiFi",
+      "image": "images/room (4).jpg",
+      "featured": true
+    },
+    {
+      "id": 5,
+      "name": "Economy Shared",
+      "type": "Shared",
+      "price": 20000,
+      "amenities": "Locker, WiFi",
+      "image": "images/room (5).jpg",
+      "featured": false
+    },
+    {
+      "id": 6,
+      "name": "The Executive",
+      "type": "Single",
+      "price": 55000,
+      "amenities": "Mini-fridge, AC",
+      "image": "images/room (6).jpg",
+      "featured": true
+    },
+    {
+      "id": 7,
+      "name": "Garden View",
+      "type": "Double",
+      "price": 32000,
+      "amenities": "Patio, WiFi",
+      "image": "images/room (7).jpg",
+      "featured": false
+    },
+    {
+      "id": 8,
+      "name": "Quiet Corner",
+      "type": "Single",
+      "price": 21000,
+      "amenities": "Study Lamp, WiFi",
+      "image": "images/room (8).jpg",
+      "featured": false
+    },
+    {
+      "id": 9,
+      "name": "Urban Studio",
+      "type": "Studio",
+      "price": 48000,
+      "amenities": "Smart TV, WiFi",
+      "image": "images/room (9).jpg",
+      "featured": false
+    },
+    {
+      "id": 10,
+      "name": "Budget Twin",
+      "type": "Double",
+      "price": 25000,
+      "amenities": "WiFi, Fan",
+      "image": "images/room (10).jpg",
+      "featured": false
+    },
+    {
+      "id": 11,
+      "name": "Penthouse Dorm",
+      "type": "Shared",
+      "price": 18000,
+      "amenities": "AC, Roof Access",
+      "image": "images/room (11).jpg",
+      "featured": false
+    },
+    {
+      "id": 12,
+      "name": "Sunrise Suite",
+      "type": "Single",
+      "price": 46000,
+      "amenities": "Ensuite, WiFi",
+      "image": "images/room (12).jpg",
+      "featured": false
+    },
+    {
+      "id": 13,
+      "name": "Mid-Town Studio",
+      "type": "Studio",
+      "price": 49000,
+      "amenities": "WiFi, Laundry",
+      "image": "images/room (13).jpg",
+      "featured": false
+    },
+    {
+      "id": 14,
+      "name": "The Library Room",
+      "type": "Single",
+      "price": 23000,
+      "amenities": "Bookshelves, WiFi",
+      "image": "images/room (14).jpg",
+      "featured": false
+    },
+    {
+      "id": 15,
+      "name": "Classic Double",
+      "type": "Double",
+      "price": 28000,
+      "amenities": "WiFi, Desk",
+      "image": "images/room (15).jpg",
+      "featured": false
+    }
+  ]
+}
